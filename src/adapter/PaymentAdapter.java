@@ -1,4 +1,5 @@
 package adapter;
 
-public class PaymentAdapter {
+public interface PaymentAdapter {
+    boolean pay(double amount);
 }
