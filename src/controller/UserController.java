@@ -16,7 +16,7 @@ public class UserController {
         User user = userFactory.createUser(name, userType);
         if (user != null) {
             System.out.println("User created: " + user.getName());
-            user.displayRole();
+            user.getRole();
         } else {
             System.out.println("Invalid user type.");
         }

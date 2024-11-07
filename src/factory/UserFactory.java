@@ -5,11 +5,11 @@ import models.Salesman;
 import models.User;
 
 public class UserFactory {
-    public User createUser(String name, String userType) {
+    public static User createUser(String name, String userType) {
         if (userType.equalsIgnoreCase("Salesman")) {
-            return new Salesman(name);
+            return new Salesman(name,"Salesman");
         } else if (userType.equalsIgnoreCase("Buyer")) {
-            return new Buyer(name);
+            return new Buyer(name,"Buyer");
         } else {
             return null;
         }
