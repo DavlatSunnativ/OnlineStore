@@ -1,4 +1,14 @@
 package strategy;
 
-public class CreditCardPayment {
+public class CreditCardPayment implements PaymentStrategy {
+    private String cardNumber;
+
+    public CreditCardPayment(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    @Override
+    public void pay(double amount) {
+        System.out.println("Paid $" + amount + " with Credit Card (Card Number: " + cardNumber + ")");
+    }
 }
