@@ -4,9 +4,9 @@ import models.Order;
 
 public class OrderBuilder {
     private String productName;
-    private int quantity = 1; // Default quantity
-    private boolean giftWrap = false; // Default no gift wrap
-    private boolean discount = false; // Default no discount
+    private int quantity = 1;
+    private boolean giftWrap = false;
+    private boolean discount = false;
 
     public OrderBuilder(String productName) {
         this.productName = productName;
